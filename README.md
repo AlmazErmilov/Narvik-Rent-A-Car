@@ -13,11 +13,15 @@ The project aims to build a website and database for Narvik Rent a Car, a small 
 * As a customer, I want to see detailed information about available cars (model, year, mileage, price, etc.), so I can make an informed decision.
 * As a customer, I want to be able to upload my driver's license and other required documents online, so I can complete the booking process without needing physical paperwork.
 * As a customer, I want to receive clear rental agreements and payment confirmations via email, so I have a record of my booking details.
+<br>
+
 * **Admin (Vitaliy):**
 * As an admin, I want to manage car availability and booking information, so I can ensure cars are assigned correctly and efficiently.
 * As an admin, I want to generate rental agreements and invoices, so I can process payments and maintain accurate financial records.
 * As an admin, I want to track vehicle maintenance and repair records, so I can keep my fleet in good condition and minimize downtime.
 * As an admin, I want to view customer booking history and communicate with customers via email or chat, so I can provide excellent customer service.
+<br>
+ 
 * **AI Agent (Future Implementation):**
 * As an AI agent, I want to automatically process customer requests for car bookings, so I can reduce Vitaliy's workload and improve response times.
 * As an AI agent, I want to generate rental agreements based on customer selections and vehicle availability, so I can streamline the booking process.
@@ -32,6 +36,8 @@ The project aims to build a website and database for Narvik Rent a Car, a small 
 * It should have a clear contact page with contact information and a method for sending messages.
 * A "frequently asked questions" (FAQ) section is recommended to address common customer queries.
 * An integrated chat function could be valuable to handle customer queries in real-time.
+<br>
+
 * **Database:**
 * The database should store comprehensive information about each car, including model, year, mileage, availability, price, maintenance records, and images.
 * The database should track customer bookings, including rental dates, customer details, payment status, and rental agreements.
