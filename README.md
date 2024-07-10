@@ -67,3 +67,26 @@ The project aims to build a website and database for Narvik Rent a Car, a small 
 
 ## ER_diagram_database_draft_v001
 ![ER_diagram_database_draft_v001](ER_diagram_database_draft_v001.png)
+
+## Comparison of Open Source Car Rental Management Systems
+
+We can choose one of these solutions maybe and look closely at these open source models to find the best fit for our needs for example.
+
+| **Criteria**                      | **BookCars**                                                | **Car Rental Management System (Flask + MySQL)**             | **Schedulebull**                                            |
+|-----------------------------------|-------------------------------------------------------------|-------------------------------------------------------------|-------------------------------------------------------------|
+| **Programming Language**          | TypeScript                                                  | Python                                                      | Various (JavaScript, Python, etc.)                          |
+| **Framework**                     | React, Node.js                                              | Flask                                                       | Various                                                     |
+| **Database**                      | SQL (supports multiple databases)                           | MySQL                                                       | Various (depending on setup)                                |
+| **Fleet Management**              | Yes                                                         | Yes                                                         | Yes                                                         |
+| **Booking Management**            | Yes                                                         | Yes                                                         | Yes                                                         |
+| **Customer Management**           | Yes                                                         | Yes                                                         | Yes                                                         |
+| **Payment and Billing**           | Stripe, PayPal, Google Pay, Apple Pay                        | MySQL Connector (integration possible)                      | Supports various payment systems                            |
+| **Mobile Application**            | Yes (Android and iOS)                                       | No (web application)                                        | Yes (depending on setup)                                    |
+| **Multilingual Support**          | Yes (English, French)                                       | No                                                          | Yes (multilingual support depending on configuration)       |
+| **Multi-Supplier Support**        | Yes                                                         | No                                                          | Yes                                                         |
+| **Security**                      | Protection against XSS, CSRF, MITM                          | Basic security measures included                            | Basic security measures included                            |
+| **License**                       | MIT                                                         | MIT                                                         | Free basic version, paid advanced features                  |
+| **Special Features**              | Push notifications, fleet management, secure transactions   | Easy to install and use, well-documented                    | Flexible configuration, extensible with modules             |
+| **Documentation and Support**     | Good documentation, support via GitHub                      | Good documentation, support via GitHub                      | Support via website and GitHub, possible paid features      |
+| **Ease of Deployment**            | Docker support                                              | Simple setup on a local server                              | Requires configuration depending on setup                   |
+| **Use Cases**                     | Small and medium businesses, multi-supplier scenarios       | Small companies, educational projects                       | Small and medium businesses, multifunctional scenarios      |
