@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="{{ get_locale() }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ _('Narvik Rent A Car') }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">{{ _('Home') }}</a></li>
+                <li><a href="{{ url_for('about') }}">{{ _('About Us') }}</a></li>
+                <li><a href="{{ url_for('services') }}">{{ _('Services') }}</a></li>
+                <li><a href="{{ url_for('renting_agreement') }}">{{ _('Renting Agreement') }}</a></li>
+                <li><a href="{{ url_for('contact') }}">{{ _('Contact') }}</a></li>
+                <li><a href="{{ url_for('company_cars') }}">{{ _('Company Cars') }}</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2023 {{ _('Narvik Rent A Car') }}</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

@@ -6,6 +6,8 @@ node_modules/
 
 # Ignore environment variable files
 .env
+.venv
+rent_a_car_website/venv
 
 # Ignore compiled files
 *.class
