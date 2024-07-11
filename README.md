@@ -66,7 +66,7 @@ The project aims to build a website and database for Narvik Rent a Car, a small 
 
 
 ## ER_diagram_database_draft_v001
-![ER_diagram_database_draft_v001](ER_diagram_database_draft_v001.png)
+![ER_diagram_database_draft_v001](ER_diagram_database_draft_v002.png)
 
 ## Comparison of Open Source Car Rental Management Systems
 
