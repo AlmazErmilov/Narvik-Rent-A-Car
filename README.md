@@ -65,7 +65,7 @@ The project aims to build a website and database for Narvik Rent a Car, a small 
 4. **AI Integration Planning:** The team will start planning the future implementation of the AI agent, considering the tasks it will automate and the necessary data and training requirements.
 
 
-## ER_diagram_database_draft_v001
+## ER_diagram_database_draft_v002
 ![ER_diagram_database_draft_v002](ER_diagram_database_draft_v002.png)
 
 ## Comparison of Open Source Car Rental Management Systems
