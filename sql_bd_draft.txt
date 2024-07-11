@@ -1,3 +1,18 @@
+-- Создание базы данных
+CREATE DATABASE IF NOT EXISTS rent_car_system;
+USE rent_car_system;
+
+-- Таблица локаций
+CREATE TABLE Locations (
+    LocationID INT PRIMARY KEY AUTO_INCREMENT,
+    City VARCHAR(100) NOT NULL,
+    Place VARCHAR(255) NOT NULL,
+    Address VARCHAR(255),
+    PostalCode VARCHAR(20),
+    Comments TEXT,
+    IsActive BOOLEAN DEFAULT TRUE
+);
+
 -- Таблица автомобилей
 CREATE TABLE Cars (
     CarID INT PRIMARY KEY AUTO_INCREMENT,
@@ -12,9 +27,10 @@ CREATE TABLE Cars (
     Category ENUM('Sedan', 'SUV', 'Hatchback', 'Station Wagon', 'Van') NOT NULL,
     Seats INT NOT NULL,
     DailyRate DECIMAL(10, 2) NOT NULL,
-    Status ENUM('Available', 'Rented', 'Maintenance', 'Out of Service') NOT NULL,
+    Status ENUM('Available', 'Rented', 'Maintenance', 'Out of Service', 'Pre-booked') NOT NULL,
     LastMaintenanceDate DATE,
-    Mileage INT NOT NULL
+    Mileage INT NOT NULL,
+    Comments TEXT
 );
 
 -- Таблица клиентов
@@ -27,7 +43,8 @@ CREATE TABLE Customers (
     Address VARCHAR(255),
     DateOfBirth DATE NOT NULL,
     LicenseNumber VARCHAR(50) UNIQUE NOT NULL,
-    LicenseExpiryDate DATE NOT NULL
+    LicenseExpiryDate DATE NOT NULL,
+    DrivingLicenseImage VARCHAR(255)
 );
 
 -- Таблица бронирований
@@ -35,13 +52,34 @@ CREATE TABLE Bookings (
     BookingID INT PRIMARY KEY AUTO_INCREMENT,
     CustomerID INT NOT NULL,
     CarID INT NOT NULL,
-    StartDate DATE NOT NULL,
-    EndDate DATE NOT NULL,
+    PickupLocationID INT NOT NULL,
+    ReturnLocationID INT NOT NULL,
+    StartDateTime DATETIME NOT NULL,
+    EndDateTime DATETIME NOT NULL,
     TotalCost DECIMAL(10, 2) NOT NULL,
     Status ENUM('Pending', 'Confirmed', 'Cancelled', 'Completed') NOT NULL,
     CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    Comments TEXT,
+    ClientComments TEXT,
+    ContractSent BOOLEAN DEFAULT FALSE,
+    ContractSentDate DATETIME,
+    ContractFile VARCHAR(255),
     FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID),
-    FOREIGN KEY (CarID) REFERENCES Cars(CarID)
+    FOREIGN KEY (CarID) REFERENCES Cars(CarID),
+    FOREIGN KEY (PickupLocationID) REFERENCES Locations(LocationID),
+    FOREIGN KEY (ReturnLocationID) REFERENCES Locations(LocationID)
+);
+
+-- Таблица платежей
+CREATE TABLE Payments (
+    PaymentID INT PRIMARY KEY AUTO_INCREMENT,
+    BookingID INT NOT NULL,
+    Amount DECIMAL(10, 2) NOT NULL,
+    PaymentDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    PaymentMethod ENUM('Credit Card', 'Debit Card', 'Cash', 'Bank Transfer') NOT NULL,
+    PaymentLink VARCHAR(255),
+    Status ENUM('Pending', 'Completed', 'Failed'),
+    FOREIGN KEY (BookingID) REFERENCES Bookings(BookingID)
 );
 
 -- Таблица дополнительных услуг
@@ -59,16 +97,6 @@ CREATE TABLE BookingServices (
     PRIMARY KEY (BookingID, ServiceID),
     FOREIGN KEY (BookingID) REFERENCES Bookings(BookingID),
     FOREIGN KEY (ServiceID) REFERENCES AdditionalServices(ServiceID)
-);
-
--- Таблица платежей
-CREATE TABLE Payments (
-    PaymentID INT PRIMARY KEY AUTO_INCREMENT,
-    BookingID INT NOT NULL,
-    Amount DECIMAL(10, 2) NOT NULL,
-    PaymentDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    PaymentMethod ENUM('Credit Card', 'Debit Card', 'Cash', 'Bank Transfer') NOT NULL,
-    FOREIGN KEY (BookingID) REFERENCES Bookings(BookingID)
 );
 
 -- Таблица технического обслуживания
