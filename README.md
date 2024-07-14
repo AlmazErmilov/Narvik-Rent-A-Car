@@ -4,7 +4,7 @@ This document summarizes the key insights, user stories, and requirements extrac
 
 **Project Scope:**
 
-The project aims to build a website and database for Narvik Rent a Car, a small rental company owned by Vitaliy. The system should handle routine tasks, including booking cars, managing rental agreements, and maintaining vehicle records. The long-term goal is to integrate an AI agent to automate some of these processes.
+The project aims to build a website and database for Narvik Rent a Car, a small rental company owned by Vitalijus. The system should handle routine tasks, including booking cars, managing rental agreements, and maintaining vehicle records. The long-term goal is to integrate an AI agent to automate some of these processes.
 
 **User Stories:**
 
@@ -15,7 +15,7 @@ The project aims to build a website and database for Narvik Rent a Car, a small 
 * As a customer, I want to receive clear rental agreements and payment confirmations via email, so I have a record of my booking details.
 <br>
 
-* **Admin (Vitaliy):**
+* **Admin (Vitalijus):**
 * As an admin, I want to manage car availability and booking information, so I can ensure cars are assigned correctly and efficiently.
 * As an admin, I want to generate rental agreements and invoices, so I can process payments and maintain accurate financial records.
 * As an admin, I want to track vehicle maintenance and repair records, so I can keep my fleet in good condition and minimize downtime.
@@ -23,9 +23,9 @@ The project aims to build a website and database for Narvik Rent a Car, a small 
 <br>
  
 * **AI Agent (Future Implementation):**
-* As an AI agent, I want to automatically process customer requests for car bookings, so I can reduce Vitaliy's workload and improve response times.
+* As an AI agent, I want to automatically process customer requests for car bookings, so I can reduce Vitalijus's workload and improve response times.
 * As an AI agent, I want to generate rental agreements based on customer selections and vehicle availability, so I can streamline the booking process.
-* As an AI agent, I want to assist customers with frequently asked questions, so I can provide basic information and support without Vitaliy's intervention.
+* As an AI agent, I want to assist customers with frequently asked questions, so I can provide basic information and support without Vitalijus's intervention.
 
 **Key Insights and Requirements:**
 
@@ -55,7 +55,7 @@ The project aims to build a website and database for Narvik Rent a Car, a small 
 
 **Next Steps:**
 
-1. **Data Collection:** Vitaliy will gather and compile all relevant data about his cars and rental processes. This will include:
+1. **Data Collection:** Vitalijus will gather and compile all relevant data about his cars and rental processes. This will include:
 * Vehicle details (make, model, year, mileage, price, images)
 * Existing booking requests and customer interactions
 * Maintenance records and repair history
