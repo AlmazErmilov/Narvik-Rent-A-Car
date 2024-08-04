@@ -7,7 +7,7 @@ This document summarizes the key insights, user stories, and requirements extrac
 The project aims to build a website and database for Narvik Rent a Car, a small rental company owned by Vitalijus. The system should handle routine tasks, including booking cars, managing rental agreements, and maintaining vehicle records. The long-term goal is to integrate an AI agent to automate some of these processes.
 
 ## ER_diagram_database_draft_v005
-![ER_diagram_database_draft_v005](database_er_drafts/ER_diagram_database_draft_v005.png)
+![ER_diagram_database_draft_v006](database_er_drafts/ER_diagram_database_draft_v006.png)
 
 **User Stories:**
 
