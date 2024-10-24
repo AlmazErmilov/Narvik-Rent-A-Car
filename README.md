@@ -1,8 +1,53 @@
 # THIS REPO IS DEPR
 
-## Narvik Rent a Car Website & Database Project Summary
-
-This document summarizes the key insights, user stories, and requirements extracted from the provided meeting transcription for the Narvik Rent a Car website and database project. Future plans to integrate an AI agent are also considered.
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 **Project Scope:**
 
